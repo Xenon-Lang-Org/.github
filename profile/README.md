@@ -24,6 +24,7 @@ The goal of this project is to implement a programming language of our own desig
 - HLS: 2.9.0.1
 - Cabal: 3.10.3.0
 - Stack: 3.1.1
+- Make: 4.3 (Linux Only)
 
 ### Supported Platforms
 - Windows
@@ -33,17 +34,36 @@ The goal of this project is to implement a programming language of our own desig
 ### Build Instructions
 #### Linux & macOS & Windows
 1. Clone the Xenon repository:
-2. Build the project using stack:
+
+2. Build the project:
+
+using Make
 ```sh
+make
+```
+
+using Stack
+```
 stack build
 ```
 
 ## Usage
 
+**Compiler**
+```sh
+./xcc <source-file.xn> [-o <output-file.wasm>]
+```
+
+**Interpreter**
+```sh
+./xin [<file.xn>] [<file.xn>] [-e <file.xn>]
+```
+
 ## Documentation
 
-The documentation is available in the `docs` repository.
+The documentation is available in the [docs repository](https://github.com/Xenon-Lang-Org/docs).
 Use mdbook to open the documentation in your browser:
+
 ```sh
 mdbook serve docs --open
 ```
