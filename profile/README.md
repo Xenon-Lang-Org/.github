@@ -24,7 +24,7 @@ The goal of this project is to implement a programming language of our own desig
 - HLS: 2.9.0.1
 - Cabal: 3.10.3.0
 - Stack: 3.1.1
-- Make: 4.3 (Linux Only)
+- Make: 4.3 (Optional, Linux Only)
 
 ### Supported Platforms
 - Windows
